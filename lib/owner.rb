@@ -40,7 +40,9 @@ end
   }
  end
  
- def se
+ def sell_pets
+   
+ end 
  
  def species
    return "human"
