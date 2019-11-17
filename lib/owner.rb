@@ -62,7 +62,7 @@ dog.owner = nil
  end
  
  def list_pets
-   @pets 
+   "I have #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
  end 
  def self.all 
   @@all 
