@@ -41,7 +41,14 @@ end
  end
  
  def sell_pets
-   Cat.all.collect 
+ def sell_pets
+ cats = Cat.all.each{|cat| cat.mood = "nervous"}
+ dogs  = Dog.all.select{|dog| dog.mood = "nervous"}
+ @pets[:dogs] = dogs
+ @pets[:cats] = cats
+ 
+ 
+end 
  end 
  
  def species
