@@ -40,6 +40,7 @@ end
   }
  end
  
+ def se
  
  def species
    return "human"
