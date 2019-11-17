@@ -41,7 +41,7 @@ end
  end
  
  def sell_pets
-   
+   Cat.all.collect 
  end 
  
  def species
