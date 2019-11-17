@@ -1,0 +1,6 @@
+class Associations
+  
+  @@cats = []
+  
+  
+end 
