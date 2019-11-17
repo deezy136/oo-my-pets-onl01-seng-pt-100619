@@ -41,8 +41,14 @@ end
  end
  
  def sell_pets
- cats = Cat.all.each{|cat| cat.mood = "nervous"}
- dogs  = Dog.all.select{|dog| dog.mood = "nervous"}
+ cats = Cat.all.each{|cat| 
+ cat.mood = "nervous"
+   cat.owner = nil
+ }
+ dogs  = Dog.all.select{|dog| 
+ dog.mood = "nervous"
+   dog.owner = nil
+ }
  @pets[:dogs] = dogs
  @pets[:cats] = cats
   end 
