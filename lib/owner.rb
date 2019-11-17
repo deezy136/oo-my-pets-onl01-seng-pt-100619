@@ -34,6 +34,13 @@ def walk_dogs
 }
 end 
   
+  def feed_cats 
+  Cat.all.each {|cats| 
+ cats.mood = "happy"
+  }
+ end
+ 
+ 
  def species
    return "human"
     end 
