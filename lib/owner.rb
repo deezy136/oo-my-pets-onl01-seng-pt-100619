@@ -41,13 +41,13 @@ end
  end
  
  def sell_pets
- cats = Cat.all.each{|cat| 
+ cats = Cat.all.each{ |cat| 
  cat.mood = "nervous"
-   cat.owner = nil
+ cat.owner = nil
  }
- dogs  = Dog.all.select{|dog| 
- dog.mood = "nervous"
-   dog.owner = nil
+dogs  = Dog.all.select{ |dog| 
+dog.mood = "nervous"
+dog.owner = nil
  }
  @pets[:dogs] = dogs
  @pets[:cats] = cats
@@ -61,6 +61,9 @@ end
     "I am a #{species}."
  end
  
+ def list_pets
+   @pets 
+ end 
  def self.all 
   @@all 
  end 
